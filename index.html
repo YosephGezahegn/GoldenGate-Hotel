@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Gate Hotel | Luxury in Hawassa, Ethiopia</title>
+    <meta name="description"
+        content="Experience the pinnacle of luxury at Golden Gate Hotel, Hawassa. Nestled by the lake, we offer premium suites and world-class service.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="loader" class="loader-overlay">
+        <div class="loader-content">
+            <h1 class="loader-title">GOLDEN GATE</h1>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <nav class="navbar glass">
+        <div class="container">
+            <div class="logo">GOLDEN <span>GATE</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="btn-primary" id="openBooking">Book Now</a></li>
+            </ul>
+            <div class="menu-toggle"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="reveal">The Essence of Pure Luxury</h1>
+            <p class="reveal">Experience unparalleled elegance in the heart of Hawassa, Ethiopia.</p>
+            <div class="hero-btns">
+                <a href="#rooms" class="btn-primary">Explore Rooms</a>
+                <a href="#about" class="btn-outline">Our Story</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="subtitle">Welcome to Excellence</span>
+                    <h2>A Golden Sanctuary in Hawassa</h2>
+                    <p>Located on the tranquil shores of Lake Hawassa, Golden Gate Hotel combines modern architectural
+                        mastery with the warm hospitality of Ethiopia. Our mission is to provide an oasis of calm and
+                        luxury for the discerning traveler.</p>
+                    <p>From our artisan-crafted interiors to our world-class dining, every detail is designed to evoke a
+                        sense of golden refinement.</p>
+                    <a href="#" class="link-arrow">Discover More</a>
+                </div>
+                <div class="about-img">
+                    <div class="img-wrapper">
+                        <img src="images/about.jpg" alt="Golden Gate Hotel Atmosphere">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rooms" class="rooms">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Luxury Accommodation</span>
+                <h2>Elegant Suites & Rooms</h2>
+            </div>
+            <div class="rooms-grid">
+                <div class="room-card reveal-on-scroll" style="--d: 1">
+                    <div class="room-img">
+                        <img src="images/executive_suite.jpg" alt="Executive Suite">
+                    </div>
+                    <div class="room-info">
+                        <h3>Executive Suite</h3>
+                        <p>Panoramic lake views and bespoke service.</p>
+                        <ul class="room-specs">
+                            <li>85 m²</li>
+                            <li>King Bed</li>
+                            <li>Lake View</li>
+                        </ul>
+                        <div class="room-footer">
+                            <span class="price">From $450 / Night</span>
+                            <a href="#" class="btn-text open-booking" data-room="Executive Suite">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="room-card reveal-on-scroll" style="--d: 2">
+                    <div class="room-img">
+                        <img src="images/deluxe_room.jpg" alt="Deluxe Room">
+                    </div>
+                    <div class="room-info">
+                        <h3>Deluxe Room</h3>
+                        <p>Perfectly balanced comfort and sophisticated style.</p>
+                        <ul class="room-specs">
+                            <li>45 m²</li>
+                            <li>Queen Bed</li>
+                            <li>Garden View</li>
+                        </ul>
+                        <div class="room-footer">
+                            <span class="price">From $220 / Night</span>
+                            <a href="#" class="btn-text open-booking" data-room="Deluxe Room">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="amenities" class="amenities">
+        <div class="container">
+            <div class="amenities-content">
+                <div class="amenities-text">
+                    <span class="subtitle">Beyond Stay</span>
+                    <h2>World Class Amenities</h2>
+                    <div class="amenity-item reveal-on-scroll" style="--d: 1">
+                        <div class="icon">✨</div>
+                        <div>
+                            <h4>Golden Spa & Wellness</h4>
+                            <p>Rejuvenate your senses with our signature spa treatments.</p>
+                        </div>
+                    </div>
+                    <div class="amenity-item reveal-on-scroll" style="--d: 2">
+                        <div class="icon">🍷</div>
+                        <div>
+                            <h4>Fine Dining Room</h4>
+                            <p>Exquisite Ethiopian and International cuisine.</p>
+                        </div>
+                    </div>
+                    <div class="amenity-item reveal-on-scroll" style="--d: 3">
+                        <div class="icon">🏊</div>
+                        <div>
+                            <h4>Infinity Pool</h4>
+                            <p>Swim with a view of the sunset over the lake.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="amenities-visual parallax-bg" style="background-image: url('images/spa.jpg');">
+                    <!-- Parallax Visual -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Guest Experiences</span>
+                <h2>What Our Guests Say</h2>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-item active">
+                    <p class="quote">"An absolute masterpiece of hospitality. The golden theme and the view of Lake
+                        Hawassa are breathtaking. Truly the pride of Ethiopia."</p>
+                    <span class="author">— Elena Rodriguez</span>
+                </div>
+                <div class="testimonial-item">
+                    <p class="quote">"Exceptional service and the most luxurious rooms I've stayed in. The Golden Spa is
+                        a must-try experience."</p>
+                    <span class="author">— Marcus Tilahun</span>
+                </div>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <span class="subtitle">Get In Touch</span>
+                    <h2>Contact Us</h2>
+                    <form id="hotelContactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15822.42777176465!2d38.4716!3d7.0504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17b1456d2e8b7d9d%3A0x6d9a9d9d9d9d9d9d!2sHawassa%2C%20Ethiopia!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                        width="100%" height="450"
+                        style="border:0; filter: grayscale(1) invert(0.9) sepia(1) hue-rotate(0deg) saturate(0.5);"
+                        allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="bookingModal" class="modal">
+        <div class="modal-content glass">
+            <span class="close-modal">&times;</span>
+            <h2>Reserve Your Stay</h2>
+            <p>Experience the golden hospitality of Hawassa.</p>
+            <form class="booking-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Arrival</label>
+                        <input type="date">
+                    </div>
+                    <div class="form-group">
+                        <label>Departure</label>
+                        <input type="date">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Room Type</label>
+                    <select>
+                        <option>Executive Suite</option>
+                        <option>Deluxe Room</option>
+                        <option>Presidential Suite</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary full-width">Check Availability</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">GOLDEN <span>GATE</span></div>
+                    <p>Luxury. Elegance. Hospitality.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#rooms">Rooms</a></li>
+                        <li><a href="#amenities">Amenities</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Hawassa, Ethiopia</p>
+                    <p>T: +251 46 000 0000</p>
+                    <p>E: contact@goldengatehotel.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Golden Gate Hotel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
