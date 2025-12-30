@@ -185,6 +185,10 @@ h4,
     align-items: center;
 }
 
+.menu-toggle {
+    display: none;
+}
+
 .nav-links a {
     text-decoration: none;
     color: var(--soft-white);
@@ -714,13 +718,133 @@ h4,
 }
 
 /* Mobile Adjustments */
-@media (max-width: 768px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
+@media (max-width: 992px) {
+    .container {
+        padding: 0 1.5rem;
     }
 
-    .form-row {
+    .about-grid,
+    .rooms-grid,
+    .amenities-content,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .about {
+        padding: 6rem 0;
+    }
+
+    .about-img {
+        order: -1;
+    }
+
+    .rooms,
+    .amenities,
+    .testimonials,
+    .contact {
+        padding: 6rem 0;
+    }
+
+    .section-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background: var(--obsidian);
         flex-direction: column;
-        gap: 0;
+        justify-content: center;
+        transition: var(--transition);
+        z-index: 1001;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        z-index: 1002;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: var(--soft-white);
+        margin: 5px 0;
+        transition: var(--transition);
+    }
+
+    .menu-toggle.open span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .about h2 {
+        font-size: 2.2rem;
+    }
+
+    .room-img {
+        height: 300px;
+    }
+
+    .room-info {
+        padding: 2rem;
+    }
+
+    .amenities-visual.parallax-bg {
+        height: 300px;
+        background-attachment: scroll;
+        /* Disable parallax on mobile */
+    }
+
+    .quote {
+        font-size: 1.5rem;
+    }
+
+    .modal-content.glass {
+        padding: 2rem;
+    }
+
+    .modal h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-btns {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-primary,
+    .btn-outline {
+        width: 100%;
+        text-align: center;
     }
 }
