@@ -18,7 +18,7 @@
 <body>
     <div id="loader" class="loader-overlay">
         <div class="loader-content">
-            <h1 class="loader-title">GOLDEN GATE</h1>
+            <h1 class="loader-title">GOLDEN GATE HOTEL</h1>
             <div class="loader-bar"></div>
         </div>
     </div>
@@ -39,6 +39,10 @@
     </nav>
 
     <header id="home" class="hero">
+        <video autoplay muted loop playsinline poster="images/hero.jpg" class="hero-video">
+            <source src="images/herovid.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1 class="reveal">The Essence of Pure Luxury</h1>
             <p class="reveal">Experience unparalleled elegance in the heart of Hawassa, Ethiopia.</p>
@@ -46,6 +50,10 @@
                 <a href="#rooms" class="btn-primary">Explore Rooms</a>
                 <a href="#about" class="btn-outline">Our Story</a>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="line"></div>
         </div>
     </header>
 
@@ -80,19 +88,19 @@
             <div class="rooms-grid">
                 <div class="room-card reveal-on-scroll" style="--d: 1">
                     <div class="room-img">
-                        <img src="images/executive_suite.jpg" alt="Executive Suite">
+                        <img src="images/standard_room.png" alt="Standard Room">
                     </div>
                     <div class="room-info">
-                        <h3>Executive Suite</h3>
-                        <p>Panoramic lake views and bespoke service.</p>
+                        <h3>Standard Room</h3>
+                        <p>Essential comfort with golden elegance.</p>
                         <ul class="room-specs">
-                            <li>85 m²</li>
-                            <li>King Bed</li>
-                            <li>Lake View</li>
+                            <li>35 m²</li>
+                            <li>Queen Bed</li>
+                            <li>City View</li>
                         </ul>
                         <div class="room-footer">
-                            <span class="price">From $450 / Night</span>
-                            <a href="#" class="btn-text open-booking" data-room="Executive Suite">View Details</a>
+                            <span class="price">From $150 / Night</span>
+                            <a href="#" class="btn-text open-booking" data-room="Standard Room">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -111,6 +119,78 @@
                         <div class="room-footer">
                             <span class="price">From $220 / Night</span>
                             <a href="#" class="btn-text open-booking" data-room="Deluxe Room">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="room-card reveal-on-scroll" style="--d: 3">
+                    <div class="room-img">
+                        <img src="images/suite_single.png" alt="Suite (Single Bed)">
+                    </div>
+                    <div class="room-info">
+                        <h3>Suite (Single Bed)</h3>
+                        <p>Expansive luxury with a cozy single king bed.</p>
+                        <ul class="room-specs">
+                            <li>65 m²</li>
+                            <li>King Bed</li>
+                            <li>Lake View</li>
+                        </ul>
+                        <div class="room-footer">
+                            <span class="price">From $350 / Night</span>
+                            <a href="#" class="btn-text open-booking" data-room="Suite (Single Bed)">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="room-card reveal-on-scroll" style="--d: 4">
+                    <div class="room-img">
+                        <img src="images/executive_suite.jpg" alt="Suite (Double Bed)">
+                    </div>
+                    <div class="room-info">
+                        <h3>Suite (Double Bed)</h3>
+                        <p>Premium suite featuring two large queen beds.</p>
+                        <ul class="room-specs">
+                            <li>75 m²</li>
+                            <li>2 Queen Beds</li>
+                            <li>Lake View</li>
+                        </ul>
+                        <div class="room-footer">
+                            <span class="price">From $400 / Night</span>
+                            <a href="#" class="btn-text open-booking" data-room="Suite (Double Bed)">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="room-card reveal-on-scroll" style="--d: 5">
+                    <div class="room-img">
+                        <img src="images/connecting_room.png" alt="Connecting Room">
+                    </div>
+                    <div class="room-info">
+                        <h3>Connecting Room</h3>
+                        <p>Perfect for families, with two interlinked spaces.</p>
+                        <ul class="room-specs">
+                            <li>80 m²</li>
+                            <li>Multiple Beds</li>
+                            <li>Garden View</li>
+                        </ul>
+                        <div class="room-footer">
+                            <span class="price">From $450 / Night</span>
+                            <a href="#" class="btn-text open-booking" data-room="Connecting Room">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="room-card reveal-on-scroll" style="--d: 6">
+                    <div class="room-img">
+                        <img src="images/presidential_suite.png" alt="Presidential Room">
+                    </div>
+                    <div class="room-info">
+                        <h3>Presidential Room</h3>
+                        <p>The pinnacle of luxury and world-class grandeur.</p>
+                        <ul class="room-specs">
+                            <li>150 m²</li>
+                            <li>Super King</li>
+                            <li>Panoramic View</li>
+                        </ul>
+                        <div class="room-footer">
+                            <span class="price">From $1200 / Night</span>
+                            <a href="#" class="btn-text open-booking" data-room="Presidential Room">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -148,6 +228,78 @@
                 </div>
                 <div class="amenities-visual parallax-bg" style="background-image: url('images/spa.jpg');">
                     <!-- Parallax Visual -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Visual Journey</span>
+                <h2>Hotel Gallery</h2>
+            </div>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="rooms">Rooms</button>
+                <button class="filter-btn" data-filter="dining">Dining Area</button>
+                <button class="filter-btn" data-filter="view">Outside View</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal-on-scroll" data-category="rooms" style="--d: 1">
+                    <img src="images/standard_room.png" alt="Standard Room">
+                    <div class="gallery-overlay">
+                        <span>Standard Room</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal-on-scroll" data-category="rooms" style="--d: 2">
+                    <img src="images/deluxe_room.jpg" alt="Deluxe Room">
+                    <div class="gallery-overlay">
+                        <span>Deluxe Room</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal-on-scroll" data-category="dining" style="--d: 3">
+                    <img src="images/dining_area.png" alt="Dining Area">
+                    <div class="gallery-overlay">
+                        <span>Golden Gate Restaurant</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal-on-scroll" data-category="rooms" style="--d: 4">
+                    <img src="images/suite_single.png" alt="Suite Single Bed">
+                    <div class="gallery-overlay">
+                        <span>Single Bed Suite</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal-on-scroll" data-category="rooms" style="--d: 5">
+                    <img src="images/executive_suite.jpg" alt="Suite Double Bed">
+                    <div class="gallery-overlay">
+                        <span>Double Bed Suite</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal-on-scroll" data-category="rooms" style="--d: 6">
+                    <img src="images/connecting_room.png" alt="Connecting Room">
+                    <div class="gallery-overlay">
+                        <span>Connecting Family Room</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal-on-scroll" data-category="rooms" style="--d: 7">
+                    <img src="images/presidential_suite.png" alt="Presidential Room">
+                    <div class="gallery-overlay">
+                        <span>Presidential Suite</span>
+                    </div>
+                </div>
+                <!-- Future Outside View images will be added here -->
+                <div class="gallery-item reveal-on-scroll" data-category="view" style="--d: 8">
+                    <img src="images/outside_view_1.png" alt="Lake View">
+                    <div class="gallery-overlay">
+                        <span>Serene Lake View</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal-on-scroll" data-category="view" style="--d: 9">
+                    <img src="images/outside_view_2.png" alt="Hotel Exterior">
+                    <div class="gallery-overlay">
+                        <span>Hotel Architecture</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -228,9 +380,12 @@
                 <div class="form-group">
                     <label>Room Type</label>
                     <select>
-                        <option>Executive Suite</option>
+                        <option>Standard Room</option>
                         <option>Deluxe Room</option>
-                        <option>Presidential Suite</option>
+                        <option>Suite (Single Bed)</option>
+                        <option>Suite (Double Bed)</option>
+                        <option>Connecting Room</option>
+                        <option>Presidential Room</option>
                     </select>
                 </div>
                 <button type="submit" class="btn-primary full-width">Check Availability</button>
