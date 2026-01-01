@@ -51,10 +51,7 @@
                 <a href="#about" class="btn-outline">Our Story</a>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <span>Scroll</span>
-            <div class="line"></div>
-        </div>
+
     </header>
 
     <section id="about" class="about">
@@ -259,17 +256,30 @@
                     </div>
                 </div>
                 <div class="gallery-item reveal-on-scroll" data-category="dining" style="--d: 3">
-                    <img src="images/dining_area.png" alt="Dining Area">
+                    <img src="images/dining_area-1.png" alt="Dining Area">
                     <div class="gallery-overlay">
                         <span>Golden Gate Restaurant</span>
                     </div>
                 </div>
-                <div class="gallery-item reveal-on-scroll" data-category="rooms" style="--d: 4">
-                    <img src="images/suite_single.png" alt="Suite Single Bed">
+                <div class="gallery-item reveal-on-scroll" data-category="dining" style="--d: 4">
+                    <img src="images/dining_area-2.png" alt="Dining Area">
                     <div class="gallery-overlay">
-                        <span>Single Bed Suite</span>
+                        <span>Golden Gate Restaurant</span>
                     </div>
                 </div>
+                <div class="gallery-item reveal-on-scroll" data-category="dining" style="--d: 4">
+                    <img src="images/dining_area-3.png" alt="Dining Area">
+                    <div class="gallery-overlay">
+                        <span>Golden Gate Restaurant</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal-on-scroll" data-category="dining" style="--d: 4">
+                    <img src="images/dining_area-4.png" alt="Dining Area">
+                    <div class="gallery-overlay">
+                        <span>Golden Gate Restaurant</span>
+                    </div>
+                </div>
+
                 <div class="gallery-item reveal-on-scroll" data-category="rooms" style="--d: 5">
                     <img src="images/executive_suite.jpg" alt="Suite Double Bed">
                     <div class="gallery-overlay">
@@ -421,6 +431,14 @@
             </div>
         </div>
     </footer>
+
+    <div id="imageModal" class="image-modal">
+        <span class="close-image-modal">&times;</span>
+        <div class="image-modal-content">
+            <img id="expandedImage" src="" alt="Expanded View">
+            <div id="imageCaption" class="image-caption"></div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

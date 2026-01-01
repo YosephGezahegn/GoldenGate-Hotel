@@ -151,4 +151,57 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+
+    // Image Modal Logic (Lightbox)
+    const imageModal = document.getElementById('imageModal');
+    const expandedImg = document.getElementById('expandedImage');
+    const imageCaption = document.getElementById('imageCaption');
+    const closeImageBtn = document.querySelector('.close-image-modal');
+
+    // Select all clickable images (Gallery and Room cards)
+    const clickableImages = document.querySelectorAll('.gallery-item img, .room-img img');
+
+    clickableImages.forEach(img => {
+        img.addEventListener('click', () => {
+            const src = img.getAttribute('src');
+            const alt = img.getAttribute('alt');
+
+            // Populate modal
+            expandedImg.setAttribute('src', src);
+            imageCaption.textContent = alt;
+
+            // Show modal
+            imageModal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        });
+    });
+
+    function closeImageModal() {
+        imageModal.classList.remove('active');
+        document.body.style.overflow = ''; // Restore scrolling
+        // Delay resetting src to avoid flash during transition
+        setTimeout(() => {
+            expandedImg.setAttribute('src', '');
+        }, 400);
+    }
+
+    if (closeImageBtn) {
+        closeImageBtn.addEventListener('click', closeImageModal);
+    }
+
+    // Close on click outside the image
+    if (imageModal) {
+        imageModal.addEventListener('click', (e) => {
+            if (e.target === imageModal || e.target === closeImageBtn) {
+                closeImageModal();
+            }
+        });
+    }
+
+    // Close on Escape key
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && imageModal.classList.contains('active')) {
+            closeImageModal();
+        }
+    });
 });
