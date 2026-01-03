@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 loader.classList.add('hidden');
                 setTimeout(() => loader.style.display = 'none', 1000);
             }
-        }, 1500); // Luxury delay
+        }, 4000); // Luxury delay + 3s for text
     });
 
     // Parallax Scrolling Effect
@@ -152,6 +152,36 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Room Image Gallery Navigation
+    const roomCardContainers = document.querySelectorAll('.room-img-container');
+
+    roomCardContainers.forEach(container => {
+        const prevBtn = container.querySelector('.prev-room-img');
+        const nextBtn = container.querySelector('.next-room-img');
+        const images = container.querySelectorAll('.room-img');
+        let currentIndex = 0;
+
+        function updateImages(index) {
+            images.forEach((img, i) => {
+                img.classList.toggle('active', i === index);
+            });
+        }
+
+        if (prevBtn && nextBtn) {
+            prevBtn.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevent opening the lightbox if we ever add a click listener to the container
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                updateImages(currentIndex);
+            });
+
+            nextBtn.addEventListener('click', (e) => {
+                e.stopPropagation(); // Prevent opening the lightbox
+                currentIndex = (currentIndex + 1) % images.length;
+                updateImages(currentIndex);
+            });
+        }
+    });
+
     // Image Modal Logic (Lightbox)
     const imageModal = document.getElementById('imageModal');
     const expandedImg = document.getElementById('expandedImage');
@@ -204,4 +234,86 @@ document.addEventListener('DOMContentLoaded', () => {
             closeImageModal();
         }
     });
+    // Custom Cursor
+    const cursor = document.createElement('div');
+    cursor.classList.add('custom-cursor');
+    document.body.appendChild(cursor);
+
+    const cursorFollower = document.createElement('div');
+    cursorFollower.classList.add('cursor-follower');
+    document.body.appendChild(cursorFollower);
+
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+        cursorFollower.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+    });
+
+    const interactiveElements = document.querySelectorAll('a, button, .gallery-item, .room-img, .menu-toggle');
+    interactiveElements.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+            cursor.classList.add('active');
+            cursorFollower.classList.add('active');
+        });
+        el.addEventListener('mouseleave', () => {
+            cursor.classList.remove('active');
+            cursorFollower.classList.remove('active');
+        });
+    });
+
+    // Advanced Parallax
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+
+        // Multi-layered Hero Parallax
+        const heroVideo = document.querySelector('.hero-video');
+        if (heroVideo) {
+            heroVideo.style.transform = `translate3d(0, ${scrolled * 0.5}px, 0)`;
+        }
+
+        const heroContent = document.querySelector('.hero-content');
+        if (heroContent) {
+            heroContent.style.transform = `translate3d(0, ${scrolled * 0.3}px, 0)`;
+            heroContent.style.opacity = 1 - (scrolled / 800);
+        }
+    });
+
+    // Amenities Cinematic Scroll Effect
+    const amenitiesSection = document.querySelector('.amenities-visual');
+    const parallaxImg = document.querySelector('.parallax-img');
+
+    if (amenitiesSection && parallaxImg) {
+        window.addEventListener('scroll', () => {
+            const rect = amenitiesSection.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            // Calculate visibility
+            if (rect.top <= windowHeight && rect.bottom >= 0) {
+                // Calculate scroll progress (0 when top enters view, 1 when bottom leaves)
+                const distance = windowHeight - rect.top;
+                const progress = distance / (windowHeight + rect.height);
+
+                // Move image slightly slower than scroll (parallax)
+                // Range: -10% to 10%
+                const moveAmount = (progress - 0.5) * 20;
+
+                parallaxImg.style.transform = `translateY(${moveAmount}%) scale(1.1)`;
+            }
+        });
+    }
+
+    // About Section Slideshow
+    const slides = document.querySelectorAll('.img-wrapper.slideshow .slide');
+    if (slides.length > 0) {
+        let currentSlide = 0;
+        setInterval(() => {
+            // Remove active from current
+            slides[currentSlide].classList.remove('active');
+
+            // Move to next
+            currentSlide = (currentSlide + 1) % slides.length;
+
+            // Add active to next
+            slides[currentSlide].classList.add('active');
+        }, 5000); // Change every 5 seconds
+    }
 });

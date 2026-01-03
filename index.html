@@ -13,6 +13,51 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
+    <meta name="keywords"
+        content="Golden Gate Hotel, Hawassa Hotel, Luxury Hotel Ethiopia, Lake Hawassa Accommodation, Best Hotel in Hawassa, Spa Hotel Hawassa, Fine Dining Hawassa">
+
+    <link rel="canonical" href="https://goldengatehotel.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://goldengatehotel.com/">
+    <meta property="og:title" content="Golden Gate Hotel | Luxury in Hawassa, Ethiopia">
+    <meta property="og:description"
+        content="Experience the pinnacle of luxury at Golden Gate Hotel, Hawassa. Nestled by the lake, we offer premium suites and world-class service.">
+    <meta property="og:image" content="https://goldengatehotel.com/images/hero.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://goldengatehotel.com/">
+    <meta property="twitter:title" content="Golden Gate Hotel | Luxury in Hawassa, Ethiopia">
+    <meta property="twitter:description"
+        content="Experience the pinnacle of luxury at Golden Gate Hotel, Hawassa. Nestled by the lake, we offer premium suites and world-class service.">
+    <meta property="twitter:image" content="https://goldengatehotel.com/images/hero.png">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "Golden Gate Hotel",
+      "image": "https://goldengatehotel.com/images/hero.png",
+      "description": "Experience the pinnacle of luxury at Golden Gate Hotel, Hawassa. Nestled by the lake, we offer premium suites and world-class service.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Lake Hawassa Area",
+        "addressLocality": "Hawassa",
+        "addressRegion": "Sidama",
+        "addressCountry": "ET"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 7.0504,
+        "longitude": 38.4716
+      },
+      "telephone": "+251460000000",
+      "priceRange": "$$$"
+    }
+    </script>
 </head>
 
 <body>
@@ -20,6 +65,7 @@
         <div class="loader-content">
             <h1 class="loader-title">GOLDEN GATE HOTEL</h1>
             <div class="loader-bar"></div>
+            <div class="loader-location">HAWASSA</div>
         </div>
     </div>
 
@@ -38,307 +84,335 @@
         </div>
     </nav>
 
-    <header id="home" class="hero">
-        <video autoplay muted loop playsinline poster="images/hero.jpg" class="hero-video">
-            <source src="images/herovid.mp4" type="video/mp4">
-        </video>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="reveal">The Essence of Pure Luxury</h1>
-            <p class="reveal">Experience unparalleled elegance in the heart of Hawassa, Ethiopia.</p>
-            <div class="hero-btns">
-                <a href="#rooms" class="btn-primary">Explore Rooms</a>
-                <a href="#about" class="btn-outline">Our Story</a>
+    <main>
+        <header id="home" class="hero">
+            <div class="video-container">
+                <img src="images/hero.png" alt="Golden Gate Hotel Luxury View" class="hero-video">
             </div>
-        </div>
-
-    </header>
-
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-text">
-                    <span class="subtitle">Welcome to Excellence</span>
-                    <h2>A Golden Sanctuary in Hawassa</h2>
-                    <p>Located on the tranquil shores of Lake Hawassa, Golden Gate Hotel combines modern architectural
-                        mastery with the warm hospitality of Ethiopia. Our mission is to provide an oasis of calm and
-                        luxury for the discerning traveler.</p>
-                    <p>From our artisan-crafted interiors to our world-class dining, every detail is designed to evoke a
-                        sense of golden refinement.</p>
-                    <a href="#" class="link-arrow">Discover More</a>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="reveal">The Essence of Pure Luxury</h1>
+                <p class="reveal">Experience unparalleled elegance in the heart of Hawassa, Ethiopia.</p>
+                <div class="hero-btns">
+                    <a href="#rooms" class="btn-primary">Explore Rooms</a>
+                    <a href="#about" class="btn-outline">Our Story</a>
                 </div>
-                <div class="about-img">
-                    <div class="img-wrapper">
-                        <img src="images/about.jpg" alt="Golden Gate Hotel Atmosphere">
+            </div>
+
+        </header>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <span class="subtitle">Welcome to Excellence</span>
+                        <h2>A Golden Sanctuary in Hawassa</h2>
+                        <p>Located on the tranquil shores of Lake Hawassa, Golden Gate Hotel combines modern
+                            architectural
+                            mastery with the warm hospitality of Ethiopia. Our mission is to provide an oasis of calm
+                            and
+                            luxury for the discerning traveler.</p>
+                        <p>From our artisan-crafted interiors to our world-class dining, every detail is designed to
+                            evoke a
+                            sense of golden refinement.</p>
+                        <a href="#" class="link-arrow">Discover More</a>
+                    </div>
+                    <div class="about-img">
+                        <div class="img-wrapper slideshow">
+                            <img src="images/about.png" alt="Golden Gate Hotel Atmosphere" class="slide active">
+                            <img src="images/Hawassa_Landmark.png" alt="Golden Gate Hotel Exterior" class="slide">
+                            <img src="images/Hawassa_Lake.jpg" alt="Golden Gate Hotel View" class="slide">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="rooms" class="rooms">
-        <div class="container">
-            <div class="section-header">
-                <span class="subtitle">Luxury Accommodation</span>
-                <h2>Elegant Suites & Rooms</h2>
+        <section id="rooms" class="rooms">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Luxury Accommodation</span>
+                    <h2>Elegant Suites & Rooms</h2>
+                </div>
+                <div class="rooms-grid">
+                    <div class="room-card reveal-on-scroll" style="--d: 1">
+                        <div class="room-img-container">
+                            <div class="room-img active">
+                                <img src="images/standard_room.png" alt="Standard Room - View 1">
+                            </div>
+                            <div class="room-img">
+                                <img src="images/standard_room_2.png" alt="Standard Room - View 2">
+                            </div>
+                            <div class="room-img">
+                                <img src="images/bathroom.png" alt="Standard Room - View 2">
+                            </div>
+                            <div class="room-nav">
+                                <button class="prev-room-img" aria-label="Previous Image">&lsaquo;</button>
+                                <button class="next-room-img" aria-label="Next Image">&rsaquo;</button>
+                            </div>
+                        </div>
+                        <div class="room-info">
+                            <h3>Standard Room</h3>
+                            <p>Essential comfort with golden elegance.</p>
+                            <ul class="room-specs">
+                                <li>35 m²</li>
+                                <li>Queen Bed</li>
+                                <li>City View</li>
+                            </ul>
+                            <div class="room-footer">
+                                <span class="price">From $35 / Night</span>
+                                <a href="#" class="btn-text open-booking" data-room="Standard Room"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card reveal-on-scroll" style="--d: 2">
+                        <div class="room-img-container">
+                            <div class="room-img active">
+                                <img src="images/deluxe_room.png" alt="Deluxe Room - View 1">
+                            </div>
+                            <div class="room-img">
+                                <img src="images/deluxe_room_2.png" alt="Deluxe Room - View 2">
+                            </div>
+                            <div class="room-nav">
+                                <button class="prev-room-img" aria-label="Previous Image">&lsaquo;</button>
+                                <button class="next-room-img" aria-label="Next Image">&rsaquo;</button>
+                            </div>
+                        </div>
+                        <div class="room-info">
+                            <h3>Deluxe Room</h3>
+                            <p>Perfectly balanced comfort and sophisticated style.</p>
+                            <ul class="room-specs">
+                                <li>45 m²</li>
+                                <li>Queen Bed</li>
+                                <li>Garden View</li>
+                            </ul>
+                            <div class="room-footer">
+                                <span class="price">From $45 / Night</span>
+                                <a href="#" class="btn-text open-booking" data-room="Deluxe Room"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card reveal-on-scroll" style="--d: 3">
+                        <div class="room-img-container">
+                            <div class="room-img active">
+                                <img src="images/single_bed.png" alt="Suite (Single Bed) - View 1">
+                            </div>
+                            <div class="room-img">
+                                <img src="images/single_bed_2.png" alt="Suite (Single Bed) - View 2">
+                            </div>
+
+                            <div class="room-nav">
+                                <button class="prev-room-img" aria-label="Previous Image">&lsaquo;</button>
+                                <button class="next-room-img" aria-label="Next Image">&rsaquo;</button>
+                            </div>
+                        </div>
+                        <div class="room-info">
+                            <h3>Suite (Single Bed)</h3>
+                            <p>Expansive luxury with a cozy single king bed.</p>
+                            <ul class="room-specs">
+                                <li>65 m²</li>
+                                <li>King Bed</li>
+                                <li>Lake View</li>
+                            </ul>
+                            <div class="room-footer">
+                                <span class="price">From $55 / Night</span>
+                                <a href="#" class="btn-text open-booking" data-room="Suite (Single Bed)"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card reveal-on-scroll" style="--d: 4">
+                        <div class="room-img-container">
+                            <div class="room-img active">
+                                <img src="images/double_bed.png" alt="Suite (Double Bed) - View 1">
+                            </div>
+                            <div class="room-img">
+                                <img src="images/single_bed_2.png" alt="Suite (Single Bed) - View 2">
+                            </div>
+                            <div class="room-nav">
+                                <button class="prev-room-img" aria-label="Previous Image">&lsaquo;</button>
+                                <button class="next-room-img" aria-label="Next Image">&rsaquo;</button>
+                            </div>
+                        </div>
+                        <div class="room-info">
+                            <h3>Suite (Double Bed)</h3>
+                            <p>Premium suite featuring two large queen beds.</p>
+                            <ul class="room-specs">
+                                <li>75 m²</li>
+                                <li>2 Queen Beds</li>
+
+                            </ul>
+                            <div class="room-footer">
+                                <span class="price">From $55 / Night</span>
+                                <a href="#" class="btn-text open-booking" data-room="Suite (Double Bed)"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="rooms-grid">
-                <div class="room-card reveal-on-scroll" style="--d: 1">
-                    <div class="room-img">
+        </section>
+
+        <section id="amenities" class="amenities">
+            <div class="container">
+                <div class="amenities-content">
+                    <div class="amenities-text">
+                        <span class="subtitle">Beyond Stay</span>
+                        <h2>World Class Amenities</h2>
+                        <div class="amenity-item reveal-on-scroll" style="--d: 1">
+                            <div>
+                                <h4>Golden Spa & Wellness</h4>
+                                <p>Rejuvenate your senses with our signature spa treatments.</p>
+                            </div>
+                        </div>
+                        <div class="amenity-item reveal-on-scroll" style="--d: 2">
+                            <div>
+                                <h4>Fine Dining Room</h4>
+                                <p>Exquisite Ethiopian and International cuisine.</p>
+                            </div>
+                        </div>
+                        <div class="amenity-item reveal-on-scroll" style="--d: 3">
+                            <div>
+                                <h4>Free High-Speed WiFi</h4>
+                                <p>Stay connected with complimentary high-speed internet.</p>
+                            </div>
+                        </div>
+                        <div class="amenity-item reveal-on-scroll" style="--d: 4">
+                            <div>
+                                <h4>Smart TV & Streaming</h4>
+                                <p>Premium entertainment with built-in streaming services.</p>
+                            </div>
+                        </div>
+                        <div class="amenity-item reveal-on-scroll" style="--d: 5">
+                            <div>
+                                <h4>Free Secure Parking</h4>
+                                <p>Safe and convenient parking for all our guests.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="amenities-visual">
+                        <img src="images/spa.jpg" alt="Golden Gate Spa" class="parallax-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Visual Journey</span>
+                    <h2>Hotel Gallery</h2>
+                </div>
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="rooms">Rooms</button>
+                    <button class="filter-btn" data-filter="dining">Dining Area</button>
+                    <button class="filter-btn" data-filter="view">Outside View</button>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item reveal-on-scroll" data-category="rooms" style="--d: 1">
                         <img src="images/standard_room.png" alt="Standard Room">
-                    </div>
-                    <div class="room-info">
-                        <h3>Standard Room</h3>
-                        <p>Essential comfort with golden elegance.</p>
-                        <ul class="room-specs">
-                            <li>35 m²</li>
-                            <li>Queen Bed</li>
-                            <li>City View</li>
-                        </ul>
-                        <div class="room-footer">
-                            <span class="price">From $150 / Night</span>
-                            <a href="#" class="btn-text open-booking" data-room="Standard Room">View Details</a>
+                        <div class="gallery-overlay">
+                            <span>Standard Room</span>
                         </div>
                     </div>
-                </div>
-                <div class="room-card reveal-on-scroll" style="--d: 2">
-                    <div class="room-img">
-                        <img src="images/deluxe_room.jpg" alt="Deluxe Room">
-                    </div>
-                    <div class="room-info">
-                        <h3>Deluxe Room</h3>
-                        <p>Perfectly balanced comfort and sophisticated style.</p>
-                        <ul class="room-specs">
-                            <li>45 m²</li>
-                            <li>Queen Bed</li>
-                            <li>Garden View</li>
-                        </ul>
-                        <div class="room-footer">
-                            <span class="price">From $220 / Night</span>
-                            <a href="#" class="btn-text open-booking" data-room="Deluxe Room">View Details</a>
+                    <div class="gallery-item reveal-on-scroll" data-category="rooms" style="--d: 1">
+                        <img src="images/standard_room_2.png" alt="Standard Room">
+                        <div class="gallery-overlay">
+                            <span>Standard Room</span>
                         </div>
                     </div>
-                </div>
-                <div class="room-card reveal-on-scroll" style="--d: 3">
-                    <div class="room-img">
-                        <img src="images/suite_single.png" alt="Suite (Single Bed)">
-                    </div>
-                    <div class="room-info">
-                        <h3>Suite (Single Bed)</h3>
-                        <p>Expansive luxury with a cozy single king bed.</p>
-                        <ul class="room-specs">
-                            <li>65 m²</li>
-                            <li>King Bed</li>
-                            <li>Lake View</li>
-                        </ul>
-                        <div class="room-footer">
-                            <span class="price">From $350 / Night</span>
-                            <a href="#" class="btn-text open-booking" data-room="Suite (Single Bed)">View Details</a>
+                    <div class="gallery-item reveal-on-scroll" data-category="rooms" style="--d: 2">
+                        <img src="images/deluxe_room.png" alt="Deluxe Room">
+                        <div class="gallery-overlay">
+                            <span>Deluxe Room</span>
                         </div>
                     </div>
-                </div>
-                <div class="room-card reveal-on-scroll" style="--d: 4">
-                    <div class="room-img">
-                        <img src="images/executive_suite.jpg" alt="Suite (Double Bed)">
-                    </div>
-                    <div class="room-info">
-                        <h3>Suite (Double Bed)</h3>
-                        <p>Premium suite featuring two large queen beds.</p>
-                        <ul class="room-specs">
-                            <li>75 m²</li>
-                            <li>2 Queen Beds</li>
-                            <li>Lake View</li>
-                        </ul>
-                        <div class="room-footer">
-                            <span class="price">From $400 / Night</span>
-                            <a href="#" class="btn-text open-booking" data-room="Suite (Double Bed)">View Details</a>
+                    <div class="gallery-item reveal-on-scroll" data-category="rooms" style="--d: 2">
+                        <img src="images/deluxe_room_2.png" alt="Deluxe Room">
+                        <div class="gallery-overlay">
+                            <span>Deluxe Room</span>
                         </div>
                     </div>
-                </div>
-                <div class="room-card reveal-on-scroll" style="--d: 5">
-                    <div class="room-img">
-                        <img src="images/connecting_room.png" alt="Connecting Room">
-                    </div>
-                    <div class="room-info">
-                        <h3>Connecting Room</h3>
-                        <p>Perfect for families, with two interlinked spaces.</p>
-                        <ul class="room-specs">
-                            <li>80 m²</li>
-                            <li>Multiple Beds</li>
-                            <li>Garden View</li>
-                        </ul>
-                        <div class="room-footer">
-                            <span class="price">From $450 / Night</span>
-                            <a href="#" class="btn-text open-booking" data-room="Connecting Room">View Details</a>
+                    <div class="gallery-item reveal-on-scroll" data-category="dining" style="--d: 3">
+                        <img src="images/dining_area-1.png" alt="Dining Area">
+                        <div class="gallery-overlay">
+                            <span>Golden Gate Restaurant</span>
                         </div>
                     </div>
-                </div>
-                <div class="room-card reveal-on-scroll" style="--d: 6">
-                    <div class="room-img">
-                        <img src="images/presidential_suite.png" alt="Presidential Room">
+                    <div class="gallery-item reveal-on-scroll" data-category="dining" style="--d: 4">
+                        <img src="images/dining_area-2.png" alt="Dining Area">
+                        <div class="gallery-overlay">
+                            <span>Golden Gate Restaurant</span>
+                        </div>
                     </div>
-                    <div class="room-info">
-                        <h3>Presidential Room</h3>
-                        <p>The pinnacle of luxury and world-class grandeur.</p>
-                        <ul class="room-specs">
-                            <li>150 m²</li>
-                            <li>Super King</li>
-                            <li>Panoramic View</li>
-                        </ul>
-                        <div class="room-footer">
-                            <span class="price">From $1200 / Night</span>
-                            <a href="#" class="btn-text open-booking" data-room="Presidential Room">View Details</a>
+                    <div class="gallery-item reveal-on-scroll" data-category="dining" style="--d: 4">
+                        <img src="images/dining_area-3.png" alt="Dining Area">
+                        <div class="gallery-overlay">
+                            <span>Golden Gate Restaurant</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item reveal-on-scroll" data-category="dining" style="--d: 4">
+                        <img src="images/dining_area-4.png" alt="Dining Area">
+                        <div class="gallery-overlay">
+                            <span>Golden Gate Restaurant</span>
+                        </div>
+                    </div>
+                    <!-- Future Outside View images will be added here -->
+                    <div class="gallery-item reveal-on-scroll" data-category="view" style="--d: 8">
+                        <img src="images/outside_view_1.png" alt="Lake View" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span>Outside View</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item reveal-on-scroll" data-category="view" style="--d: 8">
+                        <img src="images/hero.png" alt="Lake View" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span>Outside View</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item reveal-on-scroll" data-category="view" style="--d: 8">
+                        <img src="images/outside_view_2.png" alt="Lake View" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span>Outside View</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item reveal-on-scroll" data-category="view" style="--d: 8">
+                        <img src="images/outside_view_3.png" alt="Lake View" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span>Outside View</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="amenities" class="amenities">
-        <div class="container">
-            <div class="amenities-content">
-                <div class="amenities-text">
-                    <span class="subtitle">Beyond Stay</span>
-                    <h2>World Class Amenities</h2>
-                    <div class="amenity-item reveal-on-scroll" style="--d: 1">
-                        <div class="icon">✨</div>
-                        <div>
-                            <h4>Golden Spa & Wellness</h4>
-                            <p>Rejuvenate your senses with our signature spa treatments.</p>
-                        </div>
-                    </div>
-                    <div class="amenity-item reveal-on-scroll" style="--d: 2">
-                        <div class="icon">🍷</div>
-                        <div>
-                            <h4>Fine Dining Room</h4>
-                            <p>Exquisite Ethiopian and International cuisine.</p>
-                        </div>
-                    </div>
-                    <div class="amenity-item reveal-on-scroll" style="--d: 3">
-                        <div class="icon">🏊</div>
-                        <div>
-                            <h4>Infinity Pool</h4>
-                            <p>Swim with a view of the sunset over the lake.</p>
-                        </div>
-                    </div>
+        <!-- <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">Guest Experiences</span>
+                    <h2>What Our Guests Say</h2>
                 </div>
-                <div class="amenities-visual parallax-bg" style="background-image: url('images/spa.jpg');">
-                    <!-- Parallax Visual -->
+                <div class="testimonial-slider">
+                    <div class="testimonial-item active">
+                        <p class="quote">"An absolute masterpiece of hospitality. The golden theme and the view of Lake
+                            Hawassa are breathtaking. Truly the pride of Ethiopia."</p>
+                        <span class="author">— Elena Rodriguez</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <p class="quote">"Exceptional service and the most luxurious rooms I've stayed in. The Golden
+                            Spa is
+                            a must-try experience."</p>
+                        <span class="author">— Marcus Tilahun</span>
+                    </div>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section> -->
 
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <div class="section-header">
-                <span class="subtitle">Visual Journey</span>
-                <h2>Hotel Gallery</h2>
-            </div>
-            <div class="gallery-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="rooms">Rooms</button>
-                <button class="filter-btn" data-filter="dining">Dining Area</button>
-                <button class="filter-btn" data-filter="view">Outside View</button>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item reveal-on-scroll" data-category="rooms" style="--d: 1">
-                    <img src="images/standard_room.png" alt="Standard Room">
-                    <div class="gallery-overlay">
-                        <span>Standard Room</span>
-                    </div>
-                </div>
-                <div class="gallery-item reveal-on-scroll" data-category="rooms" style="--d: 2">
-                    <img src="images/deluxe_room.jpg" alt="Deluxe Room">
-                    <div class="gallery-overlay">
-                        <span>Deluxe Room</span>
-                    </div>
-                </div>
-                <div class="gallery-item reveal-on-scroll" data-category="dining" style="--d: 3">
-                    <img src="images/dining_area-1.png" alt="Dining Area">
-                    <div class="gallery-overlay">
-                        <span>Golden Gate Restaurant</span>
-                    </div>
-                </div>
-                <div class="gallery-item reveal-on-scroll" data-category="dining" style="--d: 4">
-                    <img src="images/dining_area-2.png" alt="Dining Area">
-                    <div class="gallery-overlay">
-                        <span>Golden Gate Restaurant</span>
-                    </div>
-                </div>
-                <div class="gallery-item reveal-on-scroll" data-category="dining" style="--d: 4">
-                    <img src="images/dining_area-3.png" alt="Dining Area">
-                    <div class="gallery-overlay">
-                        <span>Golden Gate Restaurant</span>
-                    </div>
-                </div>
-                <div class="gallery-item reveal-on-scroll" data-category="dining" style="--d: 4">
-                    <img src="images/dining_area-4.png" alt="Dining Area">
-                    <div class="gallery-overlay">
-                        <span>Golden Gate Restaurant</span>
-                    </div>
-                </div>
 
-                <div class="gallery-item reveal-on-scroll" data-category="rooms" style="--d: 5">
-                    <img src="images/executive_suite.jpg" alt="Suite Double Bed">
-                    <div class="gallery-overlay">
-                        <span>Double Bed Suite</span>
-                    </div>
-                </div>
-                <div class="gallery-item reveal-on-scroll" data-category="rooms" style="--d: 6">
-                    <img src="images/connecting_room.png" alt="Connecting Room">
-                    <div class="gallery-overlay">
-                        <span>Connecting Family Room</span>
-                    </div>
-                </div>
-                <div class="gallery-item reveal-on-scroll" data-category="rooms" style="--d: 7">
-                    <img src="images/presidential_suite.png" alt="Presidential Room">
-                    <div class="gallery-overlay">
-                        <span>Presidential Suite</span>
-                    </div>
-                </div>
-                <!-- Future Outside View images will be added here -->
-                <div class="gallery-item reveal-on-scroll" data-category="view" style="--d: 8">
-                    <img src="images/outside_view_1.png" alt="Lake View">
-                    <div class="gallery-overlay">
-                        <span>Serene Lake View</span>
-                    </div>
-                </div>
-                <div class="gallery-item reveal-on-scroll" data-category="view" style="--d: 9">
-                    <img src="images/outside_view_2.png" alt="Hotel Exterior">
-                    <div class="gallery-overlay">
-                        <span>Hotel Architecture</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <span class="subtitle">Guest Experiences</span>
-                <h2>What Our Guests Say</h2>
-            </div>
-            <div class="testimonial-slider">
-                <div class="testimonial-item active">
-                    <p class="quote">"An absolute masterpiece of hospitality. The golden theme and the view of Lake
-                        Hawassa are breathtaking. Truly the pride of Ethiopia."</p>
-                    <span class="author">— Elena Rodriguez</span>
-                </div>
-                <div class="testimonial-item">
-                    <p class="quote">"Exceptional service and the most luxurious rooms I've stayed in. The Golden Spa is
-                        a must-try experience."</p>
-                    <span class="author">— Marcus Tilahun</span>
-                </div>
-                <div class="testimonial-dots">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                </div>
-            </div>
-        </div>
-    </section>
+    </main>
 
     <section id="contact" class="contact">
         <div class="container">
@@ -346,18 +420,18 @@
                 <div class="contact-form">
                     <span class="subtitle">Get In Touch</span>
                     <h2>Contact Us</h2>
-                    <form id="hotelContactForm">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                    <div class="contact-details">
+                        <div class="contact-card">
+                            <h3>General Manager</h3>
+                            <h3>Dagim</h3>
+                            <h3>0909 92 22 22</h3>
                         </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                        <div class="contact-card">
+                            <h3>Booking & Reservations</h3>
+                            <h3>Landline</h3>
+                            <h3>046 221 73 35</h3>
                         </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary">Send Message</button>
-                    </form>
+                    </div>
                 </div>
                 <div class="contact-map">
                     <iframe
@@ -394,8 +468,6 @@
                         <option>Deluxe Room</option>
                         <option>Suite (Single Bed)</option>
                         <option>Suite (Double Bed)</option>
-                        <option>Connecting Room</option>
-                        <option>Presidential Room</option>
                     </select>
                 </div>
                 <button type="submit" class="btn-primary full-width">Check Availability</button>
@@ -422,8 +494,8 @@
                 <div class="footer-contact">
                     <h4>Contact Us</h4>
                     <p>Hawassa, Ethiopia</p>
-                    <p>T: +251 46 000 0000</p>
-                    <p>E: contact@goldengatehotel.com</p>
+                    <p>T: 0909 92 22 22</p>
+                    <p>E: booking@goldengatehotel.com</p>
                 </div>
             </div>
             <div class="footer-bottom">
