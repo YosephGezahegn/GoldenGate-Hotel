@@ -373,7 +373,7 @@ h4,
 }
 
 .subtitle {
-    color: var(--primary-gold);
+    color: var(--dark-gold);
     text-transform: uppercase;
     font-size: 0.8rem;
     letter-spacing: 3px;
@@ -647,7 +647,7 @@ h4,
 .footer-links h4,
 .footer-contact h4 {
     margin-bottom: 1.5rem;
-    color: var(--primary-gold);
+    color: var(--dark-gold);
 }
 
 .footer-links ul {
@@ -673,7 +673,7 @@ h4,
     text-align: center;
     padding-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
-    color: #666;
+    color: #aaa;
     font-size: 0.8rem;
 }
 
@@ -1262,7 +1262,7 @@ h4,
 }
 
 .contact-card h3 {
-    color: var(--primary-gold);
+    color: var(--dark-gold);
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 2px;

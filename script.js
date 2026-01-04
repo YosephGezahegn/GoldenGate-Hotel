@@ -91,27 +91,30 @@ document.addEventListener('DOMContentLoaded', () => {
     // Testimonial Slider
     const testimonials = document.querySelectorAll('.testimonial-item');
     const dots = document.querySelectorAll('.dot');
-    let currentSlide = 0;
 
-    function showSlide(index) {
-        testimonials.forEach(t => t.classList.remove('active'));
-        dots.forEach(d => d.classList.remove('active'));
-        testimonials[index].classList.add('active');
-        dots[index].classList.add('active');
-    }
+    if (testimonials.length > 0) {
+        let currentSlide = 0;
 
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-            currentSlide = index;
-            showSlide(currentSlide);
+        function showSlide(index) {
+            testimonials.forEach(t => t.classList.remove('active'));
+            dots.forEach(d => d.classList.remove('active'));
+            testimonials[index].classList.add('active');
+            dots[index].classList.add('active');
+        }
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentSlide = index;
+                showSlide(currentSlide);
+            });
         });
-    });
 
-    // Auto-advance testimonials
-    setInterval(() => {
-        currentSlide = (currentSlide + 1) % testimonials.length;
-        showSlide(currentSlide);
-    }, 5000);
+        // Auto-advance testimonials
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % testimonials.length;
+            showSlide(currentSlide);
+        }, 5000);
+    }
 
     // Page Loader Dismissal
     window.addEventListener('load', () => {
