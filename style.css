@@ -1077,7 +1077,7 @@ h4,
     }
 
     .about {
-        padding: 6rem 0;
+        padding: 4rem 0;
     }
 
     .about-img {
@@ -1087,8 +1087,9 @@ h4,
     .rooms,
     .amenities,
     .testimonials,
-    .contact {
-        padding: 6rem 0;
+    .contact,
+    .gallery {
+        padding: 4rem 0;
     }
 
     .section-header h2 {
@@ -1147,19 +1148,28 @@ h4,
     }
 
     .hero-content h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .about h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
-    .room-img {
-        height: 300px;
+    .room-img-container {
+        height: 250px;
     }
 
     .room-info {
-        padding: 2rem;
+        padding: 1.5rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 0.8rem;
+    }
+
+    .gallery-item {
+        height: 200px;
     }
 
     /* Custom Cursor */
