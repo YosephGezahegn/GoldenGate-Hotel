@@ -3,12 +3,49 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
 
-    // Navbar scroll effect
+    // Optimized Scroll Handler using requestAnimationFrame
+    let scrollScheduled = false;
+
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
+        if (!scrollScheduled) {
+            window.requestAnimationFrame(() => {
+                const scrolled = window.pageYOffset;
+
+                // Navbar scroll effect
+                if (scrolled > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+
+                // Hero Parallax
+                const heroContent = document.querySelector('.hero-content');
+                if (heroContent) {
+                    heroContent.style.transform = `translate3d(0, ${scrolled * 0.4}px, 0)`;
+                    heroContent.style.opacity = 1 - (scrolled / 700);
+                }
+
+                // Amenities Parallax
+                const parallaxBg = document.querySelector('.parallax-bg');
+                if (parallaxBg) {
+                    parallaxBg.style.backgroundPositionY = `${scrolled * 0.15}px`;
+                }
+
+                // Cinematic Scroll Effect
+                if (amenitiesSection && parallaxImg) {
+                    const rect = amenitiesSection.getBoundingClientRect();
+                    const windowHeight = window.innerHeight;
+                    if (rect.top <= windowHeight && rect.bottom >= 0) {
+                        const distance = windowHeight - rect.top;
+                        const progress = distance / (windowHeight + rect.height);
+                        const moveAmount = (progress - 0.5) * 20;
+                        parallaxImg.style.transform = `translateY(${moveAmount}%) scale(1.1)`;
+                    }
+                }
+
+                scrollScheduled = false;
+            });
+            scrollScheduled = true;
         }
     });
 
@@ -260,46 +297,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Advanced Parallax
-    window.addEventListener('scroll', () => {
-        const scrolled = window.pageYOffset;
-
-        // Multi-layered Hero Parallax
-        const heroVideo = document.querySelector('.hero-video');
-        if (heroVideo) {
-            heroVideo.style.transform = `translate3d(0, ${scrolled * 0.5}px, 0)`;
-        }
-
-        const heroContent = document.querySelector('.hero-content');
-        if (heroContent) {
-            heroContent.style.transform = `translate3d(0, ${scrolled * 0.3}px, 0)`;
-            heroContent.style.opacity = 1 - (scrolled / 800);
-        }
-    });
-
-    // Amenities Cinematic Scroll Effect
-    const amenitiesSection = document.querySelector('.amenities-visual');
-    const parallaxImg = document.querySelector('.parallax-img');
-
-    if (amenitiesSection && parallaxImg) {
-        window.addEventListener('scroll', () => {
-            const rect = amenitiesSection.getBoundingClientRect();
-            const windowHeight = window.innerHeight;
-
-            // Calculate visibility
-            if (rect.top <= windowHeight && rect.bottom >= 0) {
-                // Calculate scroll progress (0 when top enters view, 1 when bottom leaves)
-                const distance = windowHeight - rect.top;
-                const progress = distance / (windowHeight + rect.height);
-
-                // Move image slightly slower than scroll (parallax)
-                // Range: -10% to 10%
-                const moveAmount = (progress - 0.5) * 20;
-
-                parallaxImg.style.transform = `translateY(${moveAmount}%) scale(1.1)`;
-            }
-        });
-    }
 
     // About Section Slideshow
     const slides = document.querySelectorAll('.img-wrapper.slideshow .slide');
