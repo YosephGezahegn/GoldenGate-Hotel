@@ -432,6 +432,7 @@ h4,
     opacity: 0;
     transition: opacity 1.5s ease-in-out;
     width: 100%;
+    height: auto;
     display: block;
     box-shadow: 20px 20px 0 var(--primary-gold);
 }
@@ -620,6 +621,7 @@ h4,
 
 .amenity-visual img {
     width: 100%;
+    height: auto;
     border-radius: 5px;
     box-shadow: 0 40px 80px rgba(0, 0, 0, 0.1);
 }
