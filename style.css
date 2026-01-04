@@ -912,6 +912,11 @@ h4,
     background: white;
 }
 
+.map-actions {
+    margin-top: 1rem;
+    text-align: center;
+}
+
 /* Modal */
 .modal {
     display: none;
